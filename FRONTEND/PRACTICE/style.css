@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+body {
+    background-color: rgb(231, 231, 231);
+}
+    
+/* }
+.blowglow{
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: -2;
+}
+
+
+.block{
+    position: relative;
+    margin: 10% auto 0;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(0deg , rgb(249, 249, 249), rgb(244, 244, 244));
+}
+
+
+glow::before , .glow::after {
+    content: '' ;
+    position: absolute;
+    left: 100px;
+    top: -2px;
+    background: linear-gradient(45deg, yellow, orange, green, lightblue, pink, hotpink,purple, red,blue );
+    background-size: 400%;
+    width: calc(200px + 4px);
+    height: calc(200px + 4px);
+    z-index: -2;
+    animation: animate 20s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 800% 0;
+    }
+    100% {
+        background-position: 0 0;
+    } 
+}
+
+.glow::after {
+    filter: blur(1px);
+} */
+
+/* ==================================================================================================================================== */
+/* Hover Me */
+.centre{
+    position: absolute;
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%,-50%); */
+}
+
+.btn{
+    display: flex;
+    font-size: 20px;
+    padding: 10px 20px;
+    color: white;
+    background: black;
+    cursor: pointer;
+}
+
+.btn:hover{
+    animation: shake 0.6s infinite;
+}
+
+@keyframes shake{
+    0%{
+       transform: translate(0px,0px) rotate(0deg) ;
+    }
+    25% {
+       transform: translate(1px,1px) rotate(1deg) ;
+    }
+    50% {
+       transform: translate(-1px,1px) rotate(1deg) ;
+    } 
+    75% {
+        transform: translate(2px,-1px) rotate(2deg) ;
+     }
+     100% {
+        transform: translate(-1px,1px) rotate(-1deg) ;
+     } 
+}
+
+/* ==================================================================================================================================== */
+/* ----------------------------------------Clippath---------------------------------- */
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+    /* background: #03a9f4; */
+}
+
+.title {
+    /* position: relative; */
+}
+
+.wavy {
+    position: absolute;
+    transform: translate(-50%,-50%);
+    font-size: 3em;
+}
+
+.wavy:nth-child(1){
+    color: transparent;
+    -webkit-text-stroke: 2px black;
+    -webkit-text-stroke: 2px #03a9f4;
+}
+
+
+.wavy:nth-child(2){
+    color: #03a9f4;
+    color: azure;
+    animation: animate 2s ease-in-out infinite;
+    }
+
+    @keyframes animate {
+        0%,100%{
+            clip-path: polygon(0 40%, 8% 34%, 24% 36%, 39% 43%, 46% 61%, 60% 70%, 73% 73%, 89% 74%, 100% 60%, 100% 99%, 0 100%);
+        }
+
+        50%{
+            clip-path: polygon(0 69%, 10% 73%, 19% 75%, 29% 72%, 43% 59%, 56% 46%, 73% 41%, 91% 46%, 100% 55%, 100% 99%, 0 100%);
+        }
+    }

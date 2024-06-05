@@ -1,0 +1,216 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    /* background-color: wheat; */
+     background: radial-gradient(rgb(176, 134, 205),rgba(247, 138, 6, 0.621));
+    /* background: pink; */
+    /* background: black; */
+}
+
+
+/* =================================================================================================================== */
+/* ----------------------------------------Wavy Heading-------------------------------------------------------------- */
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    
+}
+ .wavy {
+    position: absolute;
+    font-size: 5em;
+}
+
+.wavy:nth-child(1){
+    color: transparent;
+    -webkit-text-stroke: 0.5px white;
+} 
+
+
+.wavy:nth-child(2){
+    color: #03a9f4;
+    color: azure;
+    animation: animat 2s ease-in-out infinite;
+    } 
+
+    @keyframes animat {
+        0%,100%{
+            clip-path: polygon(0 40%, 8% 34%, 24% 36%, 39% 43%, 46% 61%, 60% 70%, 73% 73%, 89% 74%, 100% 60%, 100% 99%, 0 100%);
+        }
+
+        50%{
+            clip-path: polygon(0 69%, 10% 73%, 19% 75%, 29% 72%, 43% 59%, 56% 46%, 73% 41%, 91% 46%, 100% 55%, 100% 99%, 0 100%);
+        }
+    }
+
+    /* ============================================================================================================================ */
+    /* ---------------------------------Chess Board--------------------------- */
+/* Chess Board dimensions */
+.layout {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Numbers on top the chess board */
+.up {
+    width: 280px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2.9% ;
+    color: aliceblue;
+}
+
+/* Numbers beside the chess board */
+.side {
+    margin-top: 20px;
+    margin-right: 20px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: azure;
+}
+
+/* ==================================================================================================================================== */
+/* ----------------------------------------------------Glowing and Normal Border------------------------------------------------------- */
+
+/* This controls the direction of the glowing border. Note: the glowing border is only a div behind another div */
+.block{
+    position: relative;
+}
+
+/* Parametres that make up the glowing border*/
+.glow::before , .glow::after {
+    content: '' ;
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    background: linear-gradient(45deg, yellow, orange, green, lightblue, pink, hotpink,purple, red,blue );
+    background-size: 400%;
+    width: calc(285px + 5px);
+    height: calc(285px + 5px);
+    z-index: -1;
+    animation: glow 20s linear infinite;
+    box-shadow: 0 15px 50px 0  ; 
+    border-radius: 5%;
+    
+}
+
+@keyframes glow{
+    0%{
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 800% 0;
+    }
+    100% {
+        background-position: 0 0;
+    } 
+}
+
+.glow::after {
+    filter: blur(10px);
+}
+
+.board{
+    display: flex;
+    /* border: groove 10px #9a604f; */
+    /* border: groove 10px #E65C19; */
+    /* box-shadow: 0 15px 50px 0; */
+    border-radius: 5%;
+
+}
+
+/* This is were all the boxes are made and set */
+.boxsize {
+    width: 35px;
+    height: 35px;
+    padding-block: 20%;
+    border: solid black 0.5px;
+}
+
+/* This is were the colors for the chess tiles are set */
+.black {
+    background-color: #F8D082;
+    /* background-color:#9c591f6c; */
+    /* box-shadow: 10px 10px 10px 0 ;  */
+}
+
+.white {
+    background-color: white;
+    /* box-shadow: 10px 10px 10px 0 ;   */
+}
+
+/* This is were the colors for the chess pawns are set */
+.blackpawn {
+   /* color: #4e2412; */
+   color: #640D6B;
+}
+
+.whitepawn {
+    /* color: #e4bd7a; */
+    color: #B51B75;
+}
+
+.fa-solid {
+    box-shadow: 3px 3px 0 0  rgba(100, 90, 90, 0.505) ;
+    border-radius: 60%;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* ==================================================================================================================================== */
+/* --------------------------------------------------------Hover Effect---------------------------------------------------------------- */
+
+ 
+.fa-solid:hover{
+    animation: shake 0.6s infinite;
+}
+
+@keyframes shake{
+    0%{
+       transform: translate(0px,0px) rotate(0deg) ;
+    }
+    25% {
+       transform: translate(1px,1px) rotate(1deg) ;
+    }
+    50% {
+       transform: translate(-1px,1px) rotate(1deg) ;
+    } 
+    75% {
+        transform: translate(2px,-1px) rotate(2deg) ;
+     }
+     100% {
+        transform: translate(-1px,1px) rotate(-1deg) ;
+     } 
+}
+
+.boxsize:hover{
+    animation: shake 0.6s infinite;
+}
+
+@keyframes shake{
+    0%{
+       transform: translate(0px,0px) rotate(0deg) ;
+    }
+    25% {
+       transform: translate(1px,1px) rotate(1deg) ;
+    }
+    50% {
+       transform: translate(-1px,1px) rotate(1deg) ;
+    } 
+    75% {
+        transform: translate(2px,-1px) rotate(2deg) ;
+     }
+     100% {
+        transform: translate(-1px,1px) rotate(-1deg) ;
+     } 
+} 

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess</title>
+    <link rel="stylesheet" href="./Chess.css">
+    <!-- <link rel="stylesheet" href="ChessExtra.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <section class="title">
+        <div class="wavy">GIDEON'S CHESS GAME BOARD</div>
+        <div class="wavy">GIDEON'S CHESS GAME BOARD</div>
+    </section>
+<main class="background">
+    <section class="layout">
+        <section class="side">
+            <div class="alpha">A</div>
+            <div class="alpha">B</div>
+            <div class="alpha">C</div>
+            <div class="alpha">D</div>
+            <div class="alpha">E</div>
+            <div class="alpha">F</div>
+            <div class="alpha">G</div>
+            <div class="alpha">H</div>
+        </section>
+        <section>
+        <section class="up">
+            <div class="nums">1</div>
+            <div class="nums">2</div>
+            <div class="nums">3</div>
+            <div class="nums">4</div>
+            <div class="nums">5</div>
+            <div class="nums">6</div>
+            <div class="nums">7</div>
+            <div class="nums">8</div>
+        </section>
+        <section class="boards">
+            <section class="board ">
+                <section class="">
+                    <div class="block glow"></div>
+                    </section>
+                <section >
+                    <div class="boxsize black blackpawn"><i class="fa-solid fa-chess-rook"></i></div>
+                    <div class="boxsize white blackpawn"><i class="fa-solid fa-chess-pawn"></i></div>
+                    <div class="boxsize black">3</div>
+                    <div class="boxsize white">4</div>
+                    <div class="boxsize black">5</div>
+                    <div class="boxsize white">6</div>
+                    <div class="boxsize black whitepawn"><i class="fa-solid fa-chess-pawn"></i></div>
+                    <div class="boxsize white whitepawn"><i class="fa-solid fa-chess-rook"></i></div>
+                </section>
+                <section>
+                    <div class="boxsize white blackpawn"><i class="fa-solid fa-chess-knight"></i></div>
+                    <div class="boxsize black blackpawn"><i class="fa-solid fa-chess-pawn"></i></div>
+                    <div class="boxsize white">3</div>
+                    <div class="boxsize black">4</div>
+                    <div class="boxsize white">5</div>
+                    <div class="boxsize black">6</div>
+                    <div class="boxsize white whitepawn"><i class="fa-solid fa-chess-pawn"></i></div>
+                    <div class="boxsize black whitepawn"><i class="fa-solid fa-chess-knight"></i></div>
+                </section>
+                <section>
+                    <div class="boxsize black blackpawn"><i class="fa-solid fa-chess-bishop"></i></div>
+                    <div class="boxsize white blackpawn"><i class="fa-solid fa-chess-pawn"></i></div>
+                    <div class="boxsize black">3</div>
+                    <div class="boxsize white">4</div>
+                    <div class="boxsize black">5</div>
+                    <div class="boxsize white">6</div>
+                    <div class="boxsize black whitepawn"><i class="fa-solid fa-chess-pawn"></i></div>
+                    <div class="boxsize white whitepawn"><i class="fa-solid fa-chess-bishop"></i></div>
+                </section>
+                <section>
+                    <div class="boxsize white blackpawn"><i class="fa-solid fa-chess-queen"></i></div>
+                    <div class="boxsize black blackpawn"><i class="fa-solid fa-chess-pawn"></i></div>
+                    <div class="boxsize white">3</div>
+                    <div class="boxsize black">4</div>
+                    <div class="boxsize white">5</div>
+                    <div class="boxsize black">6</div>
+                    <div class="boxsize white whitepawn"><i class="fa-solid fa-chess-pawn"></i></div>
+                    <div class="boxsize black whitepawn"><i class="fa-solid fa-chess-queen"></i></div>
+                </section>
+                <section>
+                    <div class="boxsize black blackpawn"><i class="fa-solid fa-chess-king"></i></div>
+                    <div class="boxsize white blackpawn"><i class="fa-solid fa-chess-pawn"></i></div>
+                    <div class="boxsize black">3</div>
+                    <div class="boxsize white">4</div>
+                    <div class="boxsize black">5</div>
+                    <div class="boxsize white">6</div>
+                    <div class="boxsize black whitepawn"><i class="fa-solid fa-chess-pawn"></i></div>
+                    <div class="boxsize white whitepawn"><i class="fa-solid fa-chess-king"></i></div>
+                </section>
+                <section>
+                    <div class="boxsize white blackpawn"><i class="fa-solid fa-chess-bishop"></i></div>
+                    <div class="boxsize black blackpawn"><i class="fa-solid fa-chess-pawn"></i></div>
+                    <div class="boxsize white">3</div>
+                    <div class="boxsize black">4</div>
+                    <div class="boxsize white">5</div>
+                    <div class="boxsize black">6</div>
+                    <div class="boxsize white whitepawn"><i class="fa-solid fa-chess-pawn"></i></div>
+                    <div class="boxsize black whitepawn"><i class="fa-solid fa-chess-bishop"></i></div>
+                </section>
+                <section>
+                    <div class="boxsize black blackpawn"><i class="fa-solid fa-chess-knight"></i></div>
+                    <div class="boxsize white blackpawn"><i class="fa-solid fa-chess-pawn"></i></div>
+                    <div class="boxsize black">3</div>
+                    <div class="boxsize white">4</div>
+                    <div class="boxsize black">5</div>
+                    <div class="boxsize white">6</div>
+                    <div class="boxsize black whitepawn"><i class="fa-solid fa-chess-pawn"></i></div>
+                    <div class="boxsize white whitepawn"><i class="fa-solid fa-chess-knight"></i></div>
+                </section>
+                <section>
+                    <div class="boxsize white blackpawn"><i class="fa-solid fa-chess-rook"></i></div>
+                    <div class="boxsize black blackpawn"><i class="fa-solid fa-chess-pawn"></i></div>
+                    <div class="boxsize white">3</div>
+                    <div class="boxsize black">4</div>
+                    <div class="boxsize white">5</div>
+                    <div class="boxsize black">6</div>
+                    <div class="boxsize white whitepawn"><i class="fa-solid fa-chess-pawn"></i></div>
+                    <div class="boxsize black whitepawn"><i class="fa-solid fa-chess-rook"></i></div>
+                    
+                </section>
+            </section>
+            <!-- <section class="board1">
+                <section >
+                    <div class="boxsize black1 blackpawn1"><i class="fa-solid fa-chess-rook"></i></div>
+                    <div class="boxsize white1 blackpawn1"><i class="fa-solid fa-chess-pawn"></i></div>
+                    <div class="boxsize black1">3</div>
+                    <div class="boxsize white1">4</div>
+                    <div class="boxsize black1">5</div>
+                    <div class="boxsize white1">6</div>
+                    <div class="boxsize black1 whitepawn1"><i class="fa-solid fa-chess-pawn"></i></div>
+                    <div class="boxsize white1 whitepawn1"><i class="fa-solid fa-chess-rook"></i></div>
+                </section>
+                <section>
+                    <div class="boxsize white1 blackpawn1"><i class="fa-solid fa-chess-knight"></i></div>
+                    <div class="boxsize black1 blackpawn1"><i class="fa-solid fa-chess-pawn"></i></div>
+                    <div class="boxsize white1">3</div>
+                    <div class="boxsize black1">4</div>
+                    <div class="boxsize white1">5</div>
+                    <div class="boxsize black1">6</div>
+                    <div class="boxsize white1 whitepawn1"><i class="fa-solid fa-chess-pawn"></i></div>
+                    <div class="boxsize black1 whitepawn1"><i class="fa-solid fa-chess-knight"></i></div>
+                </section>
+                <section>
+                    <div class="boxsize black1 blackpawn1"><i class="fa-solid fa-chess-bishop"></i></div>
+                    <div class="boxsize white1 blackpawn1"><i class="fa-solid fa-chess-pawn"></i></div>
+                    <div class="boxsize black1">3</div>
+                    <div class="boxsize white1">4</div>
+                    <div class="boxsize black1">5</div>
+                    <div class="boxsize white1">6</div>
+                    <div class="boxsize black1 whitepawn1"><i class="fa-solid fa-chess-pawn"></i></div>
+                    <div class="boxsize white1 whitepawn1"><i class="fa-solid fa-chess-bishop"></i></div>
+                </section>
+                <section>
+                    <div class="boxsize white1 blackpawn1"><i class="fa-solid fa-chess-queen"></i></div>
+                    <div class="boxsize black1 blackpawn1"><i class="fa-solid fa-chess-pawn"></i></div>
+                    <div class="boxsize white1">3</div>
+                    <div class="boxsize black1">4</div>
+                    <div class="boxsize white1">5</div>
+                    <div class="boxsize black1">6</div>
+                    <div class="boxsize white1 whitepawn1"><i class="fa-solid fa-chess-pawn"></i></div>
+                    <div class="boxsize black1 whitepawn1"><i class="fa-solid fa-chess-queen"></i></div>
+                </section>
+                <section>
+                    <div class="boxsize black1 blackpawn1"><i class="fa-solid fa-chess-king"></i></div>
+                    <div class="boxsize white1 blackpawn1"><i class="fa-solid fa-chess-pawn"></i></div>
+                    <div class="boxsize black1">3</div>
+                    <div class="boxsize white1">4</div>
+                    <div class="boxsize black1">5</div>
+                    <div class="boxsize white1">6</div>
+                    <div class="boxsize black1 whitepawn1"><i class="fa-solid fa-chess-pawn"></i></div>
+                    <div class="boxsize white1 whitepawn1"><i class="fa-solid fa-chess-king"></i></div>
+                </section>
+                <section>
+                    <div class="boxsize white1 blackpawn1"><i class="fa-solid fa-chess-bishop"></i></div>
+                    <div class="boxsize black1 blackpawn1"><i class="fa-solid fa-chess-pawn"></i></div>
+                    <div class="boxsize white1">3</div>
+                    <div class="boxsize black1">4</div>
+                    <div class="boxsize white1">5</div>
+                    <div class="boxsize black1">6</div>
+                    <div class="boxsize white1 whitepawn1"><i class="fa-solid fa-chess-pawn"></i></div>
+                    <div class="boxsize black1 whitepawn1"><i class="fa-solid fa-chess-bishop"></i></div>
+                </section>
+                <section>
+                    <div class="boxsize black1 blackpawn1"><i class="fa-solid fa-chess-knight"></i></div>
+                    <div class="boxsize white1 blackpawn1"><i class="fa-solid fa-chess-pawn"></i></div>
+                    <div class="boxsize black1">3</div>
+                    <div class="boxsize white1">4</div>
+                    <div class="boxsize black1">5</div>
+                    <div class="boxsize white1">6</div>
+                    <div class="boxsize black1 whitepawn1"><i class="fa-solid fa-chess-pawn"></i></div>
+                    <div class="boxsize white1 whitepawn1"><i class="fa-solid fa-chess-knight"></i></div>
+                </section>
+                <section>
+                    <div class="boxsize white1 blackpawn1"><i class="fa-solid fa-chess-rook"></i></div>
+                    <div class="boxsize black1 blackpawn1"><i class="fa-solid fa-chess-pawn"></i></div>
+                    <div class="boxsize white1">3</div>
+                    <div class="boxsize black1">4</div>
+                    <div class="boxsize white1">5</div>
+                    <div class="boxsize black1">6</div>
+                    <div class="boxsize white1 whitepawn1"><i class="fa-solid fa-chess-pawn"></i></div>
+                    <div class="boxsize black1 whitepawn1"><i class="fa-solid fa-chess-rook"></i></div>
+                    
+                </section>
+            </section> -->
+        </section>
+        </section>
+    </section>
+</main>
+</body>
+</html>

@@ -1,0 +1,40 @@
+* {
+    margin: 0px;
+}
+.red {
+    height: 150px;
+    width: 200px;
+    background-color: red;
+
+}
+
+.blue {
+    height: 200px;
+    width: 250px;
+    background-color: blue;
+    margin: 50px;
+}
+.aqua {
+    height: 200px;
+    width: 350px;
+    background-color: aqua;
+}
+.green {
+    height: 300px;
+    width: 350px;
+    background-color: green;
+    margin: 50px;
+}
+
+.purple {
+    height: 250px;
+    width: 400px;
+    background-color: purple;
+}
+
+.grey {
+    height: 500px;
+    width: 600px;
+    background-color: gray;
+    margin: 50px;
+}

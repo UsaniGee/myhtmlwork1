@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom right ,red, #08eefe);
+    /* background-color: #19a1ad;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+/* The controls class targets the BOXES in the section which is a parent of everything. The below commands where not done one the body tag incase the are other elements o the body that does not require the commands. */
+.controls {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* gap: 50px; */
+   margin: 0px;
+
+}
+
+.boxOne {
+    height: 50px;
+    width: 150px;
+    background-color: #48dedf;
+    /* border-radius: 50px; */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.boxTwo {
+    height: 60px;
+    width: 150px;
+    background-color: white;
+    /* border-radius: 10px; */
+    /* border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; */
+}
+
+.img1 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    position: relative;
+    /* margin: auto; */
+    top: -25px;
+    right: -50px;
+    border-color: white;
+    border-style: solid;
+    object-fit: cover;
+    object-position: center;
+}
+
+.three {
+    box-shadow: 0 10px 10px 0 rgba(5, 5, 5, 0), 0 6px 20px 0 rgba(0,0,0,0.19);
+    /* margin-right: 50px; */
+}
+
+.five {
+    height: 40px;
+    width: 150px;
+    background-color:white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-style: solid;
+    border-color: #cccbcf19;
+    padding-top: 10px;
+} 
+
+.div1 {
+    position: relative;
+    top: -15px;
+    right: 10px;
+    font-size: 10px;
+}
+
+.div2 {
+    position: relative;
+    top: -15px; 
+    left: -6px;
+    font-size: 10px;
+    color: #a6a6ad;
+   
+}
+
+.div3 {
+    font-size: 7px;
+    position: relative;
+    top: -15px;
+    color: #a6a6ad;
+    text-align: center;
+}
+
+.div3__ {
+    font-size: 7px; 
+    text-align: center; 
+    padding-bottom: 0px;
+    font-weight: bold; 
+}
+
+.div3_1 {
+    padding: 15px;
+    
+}
+
+.div3_2 {
+    padding: 15px;
+}
+
+.div3_3 {
+    padding: 15px;
+}
+
+.div3___ {
+    color: #b5b5b8;
+    font-size: 5px;
+    line-height: 10px;
+}
+.div3_1_1 {
+    padding: 12px;
+}
+
+.div3_2_1 {
+    padding: 15px;
+}
+
+.div3_3_1 {
+    padding: 16px;
+}
+

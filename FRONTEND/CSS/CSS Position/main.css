@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.one {
+    height: 100vh;
+    background-color: blue;
+}
+
+.childone {
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    top: 0;
+    border-radius: 200px;
+    position: sticky;
+    color: rgb(30, 127, 212);
+}
+
+.childtwo {
+    font-size: 100px;
+    color: white;
+    position: fixed;
+    top: 0;
+    right: 0vw;
+    
+}
+
+.two {
+    height: 100vh;
+    background-color: brown;
+    /*  position: sticky; */
+}
+
+.childtwo1 {   
+    width: 150px;
+    height: 150px;
+    /* background-color: rgb(236, 219, 25);  */
+
+}
+.childtwo2 {  
+    width: 150px;
+    height: 150px;
+    background-color: black;   
+    position: ;
+    bottom: 0;
+    right: 0;
+    /* visibility: hidden; */
+    opacity: 0.5;
+
+}
+/* .size {
+    height: 150px;
+    width: 150px;
+    font-size: 50px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    border-radius: 200px;
+} */
+
+/* .box-1 {
+    background-color: red;
+   
+    
+}
+
+.box-2 {
+    background-color: pink;
+    top: 0;
+    right: 0;
+   
+}
+
+.loner1 {
+    border: 2px solid red;
+    height: 500px;
+    margin-bottom: 10px;
+}
+
+.loner{
+    position: relative;
+    left: 30vw;
+    border: 10px solid red;
+    height: 500px;
+    width: 500px;
+    top: 100px;
+    text-align: center;
+    
+
+}
+
+
+
+.box-3{
+    background-color: rgb(255, 0, 0);
+    position: absolute;
+    top: -27.5px;
+    right: -100px;
+    border-radius: 0;
+    height: 55px;
+    width: 200px;
+    text-align: center;
+    font-size: 40px;
+    /* font-size: 60px; */ 
+/* } */
+
+/* .box-4{
+    background-color: orange;
+    bottom: 0;
+    
+}
+
+.box-5{
+    background-color: black;
+    bottom: 0;
+    right: 0;
+
+}  */
+
+

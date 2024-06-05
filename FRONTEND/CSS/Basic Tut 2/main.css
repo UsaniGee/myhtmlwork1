@@ -1,0 +1,21 @@
+.name {
+    color: #FF6F09; 
+    text-align: center;
+
+    
+}
+.templink{
+    color: blue;
+}
+.aboutbackground {
+   font-style: italic;
+   color: aliceblue;
+   
+}
+header {
+    /* background-color: #FFF9D0; */
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url('./Img/technology-online-shopping-concept-surprised-young-black-man-using-mobile-phone-looking-camera-amazed-happy-after-reading-message-pink-background\ \(1\)\ 1.png');
+    background-repeat: no-repeat; 
+    background-size: cover;
+    height: 100vh;
+}
